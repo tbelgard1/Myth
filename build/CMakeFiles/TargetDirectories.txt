@@ -1,0 +1,3 @@
+C:/Users/18018/Desktop/Myth-main/Bungie.net/build/CMakeFiles/BungieNetServer.dir
+C:/Users/18018/Desktop/Myth-main/Bungie.net/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/18018/Desktop/Myth-main/Bungie.net/build/CMakeFiles/ZERO_CHECK.dir

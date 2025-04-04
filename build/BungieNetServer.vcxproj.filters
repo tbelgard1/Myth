@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\authentication.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\byte_swapping.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\cseries.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\game_search_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\metaserver_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\network_queues.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\order_stats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\player_search_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\ps_query.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\rb_tree.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\room_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\sl_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\stats.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\update_server_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\web_server_packets.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\common\win_compat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\game_search_new\games_list.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\game_search_new\game_search_server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\room_new\games.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\room_new\games_log.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\room_new\remote_commands.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\room_new\roomd_new.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\room_new\server_code.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\game_evaluator.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\orders.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\rank.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\room_list_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\users.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\users_new\environment.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\18018\Desktop\Myth-main\Bungie.net\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{BD1B1B8F-5310-324C-9EE6-5466D03C849C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

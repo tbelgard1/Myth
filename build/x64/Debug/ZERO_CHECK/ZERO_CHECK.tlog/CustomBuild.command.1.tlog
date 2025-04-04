@@ -1,0 +1,10 @@
+^C:\USERS\18018\DESKTOP\MYTH-MAIN\BUNGIE.NET\BUILD\CMAKEFILES\F80FBFC1A993749D16868443270662A9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\bin\cmake.exe" -SC:/Users/18018/Desktop/Myth-main/Bungie.net -BC:/Users/18018/Desktop/Myth-main/Bungie.net/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/18018/Desktop/Myth-main/Bungie.net/build/BungieNetServer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{42407313-3260-40fc-9854-b45fc243da5b}</ProjectGuid>
+    <RootNamespace>BungieNetServer</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)common;$(ProjectDir)utils;$(ProjectDir)game_search_new;$(ProjectDir)room_new;$(ProjectDir)users_new</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>BN2_FULLVERSION
+     HARDCODE_USERD_SETTINGS
+     _CRT_SECURE_NO_WARNINGS;%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;BN2_FULLVERSION;HARDCODE_USERD_SETTINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)common;$(ProjectDir)utils;$(ProjectDir)game_search_new;$(ProjectDir)room_new;$(ProjectDir)users_new</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;BN2_FULLVERSION;HARDCODE_USERD_SETTINGS;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\common\authentication.c" />
+    <ClCompile Include="..\common\byte_swapping.c" />
+    <ClCompile Include="..\common\cseries.c" />
+    <ClCompile Include="..\common\game_search_packets.c" />
+    <ClCompile Include="..\common\metaserver_packets.c" />
+    <ClCompile Include="..\common\network_queues.c" />
+    <ClCompile Include="..\common\order_stats.c" />
+    <ClCompile Include="..\common\player_search_packets.c" />
+    <ClCompile Include="..\common\rb_tree.c" />
+    <ClCompile Include="..\common\room_packets.c" />
+    <ClCompile Include="..\common\sl_list.c" />
+    <ClCompile Include="..\common\stats.c" />
+    <ClCompile Include="..\common\update_server_packets.c" />
+    <ClCompile Include="..\common\web_server_packets.c" />
+    <ClCompile Include="..\game_search_new\games_list.c" />
+    <ClCompile Include="..\game_search_new\game_search_server.c" />
+    <ClCompile Include="..\room_new\games.c" />
+    <ClCompile Include="..\room_new\games_log.c" />
+    <ClCompile Include="..\room_new\remote_commands.c" />
+    <ClCompile Include="..\room_new\roomd_new.c" />
+    <ClCompile Include="..\room_new\server_code.c" />
+    <ClCompile Include="..\users_new\game_evaluator.c" />
+    <ClCompile Include="..\users_new\main.c" />
+    <ClCompile Include="..\users_new\orders.c" />
+    <ClCompile Include="..\users_new\rank.c" />
+    <ClCompile Include="..\users_new\room_list_file.c" />
+    <ClCompile Include="..\users_new\users.c" />
+    <ClCompile Include="..\utils\environment.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\authentication.h" />
+    <ClInclude Include="..\common\byte_swapping.h" />
+    <ClInclude Include="..\common\caste.h" />
+    <ClInclude Include="..\common\cseries.h" />
+    <ClInclude Include="..\common\game_search_packets.h" />
+    <ClInclude Include="..\common\game_search_types.h" />
+    <ClInclude Include="..\common\metaserver_codes.h" />
+    <ClInclude Include="..\common\metaserver_common_structs.h" />
+    <ClInclude Include="..\common\metaserver_packets.h" />
+    <ClInclude Include="..\common\network_queues.h" />
+    <ClInclude Include="..\common\order_stats.h" />
+    <ClInclude Include="..\common\platform.h" />
+    <ClInclude Include="..\common\player_search_packets.h" />
+    <ClInclude Include="..\common\rb_tree.h" />
+    <ClInclude Include="..\common\room_packets.h" />
+    <ClInclude Include="..\common\sl_list.h" />
+    <ClInclude Include="..\common\stats.h" />
+    <ClInclude Include="..\common\update_server_packets.h" />
+    <ClInclude Include="..\common\web_server_packets.h" />
+    <ClInclude Include="..\game_search_new\games_list.h" />
+    <ClInclude Include="..\room_new\games.h" />
+    <ClInclude Include="..\room_new\games_log.h" />
+    <ClInclude Include="..\room_new\remote_commands.h" />
+    <ClInclude Include="..\room_new\room_globals.h" />
+    <ClInclude Include="..\room_new\server_code.h" />
+    <ClInclude Include="..\users_new\bungie_net_order.h" />
+    <ClInclude Include="..\users_new\bungie_net_player.h" />
+    <ClInclude Include="..\users_new\orders.h" />
+    <ClInclude Include="..\users_new\rank.h" />
+    <ClInclude Include="..\users_new\room_list_file.h" />
+    <ClInclude Include="..\users_new\users.h" />
+    <ClInclude Include="..\utils\environment.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\utils\environment_settings.c.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
