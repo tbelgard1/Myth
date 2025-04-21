@@ -1,0 +1,3 @@
+Starting userd_new main()
+[DEBUG] CASCADE HARDCODE TEST - userd_port about to be set
+[INFO] userd_port forcibly set to 6321 to match client.
