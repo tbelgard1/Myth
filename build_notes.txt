@@ -1,0 +1,149 @@
+***********************************************************
+Build changes for stock bungie.net metaserver, Aug 16, 2003 
+by Alan Wagner.. questions, comments, alanw@cox.net
+
+***********************************************************
+
+
+
+Target platforms: linux (gcc) and Windowz (cygwin).
+
+Goal: This 'spaghetti Code' should readily compile using gcc or g++, warning free
+for either BN2_FULLVERSION or BN2_DEMOVERSION
+
+Note: Most changes are commented with "ALAN", and all original code I modified was
+commented out and left in place.
+
+
+
+Pre-build steps:
+
+build_settings.txt modified - added a target platform (linux)
+
+"cseries.h" modified -  see file for details
+
+"cseries.c" - cygwin specific modifications
+
+
+
+**At this point we have a good build, although hundreds of compiler warnings :(
+
+
+
+Code 'fixes':
+
+Note: these modified files have had numerous changes including, but not limited to:
+ * implicit declaration errors - fixed
+ * simple format/args warnings - fixed
+ * unused/unitialized variables - fixed
+ * multi-character character constant warnings - fixed
+ * syntax errors - fixed
+ * incompatible pointer type errors - fixed
+ * improper parameter list errors - fixed
+
+Modified Files:
+
+"game_search_server.c"
+"games_list.c"
+"network_queues.c" 
+"metaserver_packets.c"
+"byte_swapping.c"
+"game_search_packets.c"
+"sl_list.c"
+"room_globals.h"
+"metaserver_packets.h"
+"room_packets.c"
+"room_packets.h"
+"server_code.c"
+"server_code.h"
+"room_new.c" 
+"games.c"
+"game_evaluator.c"
+"main.c"
+"users.h"
+"orders.c"
+"rank.c"
+"users.c"
+"web_server_packets.c"
+"rb_tree.c"
+
+
+
+
+**At this point we have a good build, with 0 compiler warnings :)
+
+Note: host IP warnings intentionally left in place, comment out later ("environment.h")
+
+
+
+
+
+
+
+***********************************************************
+Build changes for stock bungie.net metaserver, Oct 23, 2003 
+by Alan Wagner.. questions, comments, alanw@cox.net
+
+***********************************************************
+
+
+Additional files modified:
+
+Note: these files have additional modifications solely for "usability" as BN2_FULLVERSION server:
+
+"rank.c" - runtime bugfix
+"main.c" - password defeat
+"authentication.c" - minimal room authentication code
+
+
+
+
+**********************************************
+
+        Setup & Running the server
+
+**********************************************
+
+
+
+"build_settings.txt":
+
+set CFLAGS appropriate to the target platform. For targeting windows platform
+with Cygwin, use -D linux AND -D CYGWIN. Set -D BN2_DEMOVERSION or -D BN2_FULLVERSION.
+
+NOTE: password encryption has been removed by bungie and is not open-sourced, so I recommend using BN2_DEMOVERSION
+to start with, as this requires no database maintenance, no user authentication, and no passwords.
+
+
+
+
+"main.c":
+
+set LOCAL_AREA_NETWORK to the IP of the host machine in hex form.
+
+Note: last 4 bytes of the IP should always be 0. 
+
+Example: for IP 216.231.43.55, LOCAL_AREA_NETWORK = 0xD8E72B00
+
+
+
+
+"environment.h":
+
+set USERD_HOST to the proper host IP
+
+For BN2_FULLVERSION set database paths
+
+
+
+Running the server:
+
+Start userdaemon, then start roomdaemon(s). Game Search server is optional.
+
+This is usually set up to start and stop via shell scripts.
+
+
+
+
+Enjoy
+

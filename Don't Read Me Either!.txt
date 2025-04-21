@@ -1,0 +1,24 @@
+This document is an annex to the ReadMe provided by Bungie Studio. Since the time this metaserver was released many updates and changes have been made to both the client side and server side networking protocols of the metaserver code. This server is MythDeveloper's attempt to provide a reasonable update to the Bungie.net open source server to better reflect these updated protocols. 
+
+The original Bungie.net code is still under license as per the License.txt file located in this archive. The additions and modifications to this code are being released under the Berkeley Software Distribution ("BSD") license. More information about BSD can be found at their web site:
+
+http://www.freebsd.org/copyright/license.html
+
+MythDevelopers will, at the time of this writing, be maintaining the source code for our edition of the Bungie.net metaserver. If you have ideas, suggestions or additions to this code, we would love to see and hear what you have done. Please keep in mind for anyone using this code that you must adhere to the BSD license and all of it's terms. We recommend you read over this carefully before using the source code contained herein.
+
+The metaserver code changes that fall outside the original Bungie.net metaserver code were written and are copyright 2002, 2003 of the following individuals
+
+© 2002, 2003 Alan Wagner
+© 2002 Vishvananda Ishaya
+© 2003 Bill Keirstead
+
+It is our hope that other servers and individuals will make use of the updated Myth Metaserver code in support and continued life of the greater Myth Community. As updates are made to the stand alone Myth TFL, Myth II and Myth III clients updates will be issued to the metaserver as needed. It will be up to server operators to ensure they remain current with the networking protocols of all three Myth clients. 
+
+We've made it easier to make a Myth server.... but we've not made it completely "easy" as per the wishes of the original programmers.
+
+We further are in the process of opening a sourceforge project for this server. Please stay tuned to the MythDev.com web site for complete details on this as it emerges.
+
+MythDevelopers
+October 24, 2003
+
+http://www.mythdev.com

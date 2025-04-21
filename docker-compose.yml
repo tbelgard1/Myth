@@ -1,0 +1,60 @@
+version: '3.8'
+
+services:
+  userd:
+    build:
+      context: .
+      dockerfile: Dockerfile.userd
+    ports:
+      - "6321:6321"
+    expose:
+      - "6321"
+    volumes:
+      - ./spaghetti/users_new/users.db:/tmp/USERS_DB
+      - ./spaghetti/users_new/orders.db:/tmp/ORDERS_DB
+      - ./spaghetti/users_new:/src/spaghetti/users_new
+      - ./spaghetti/rooms.lst:/src/spaghetti/rooms.lst
+    environment:
+      - USER_DB_PATH=/tmp/USERS_DB
+
+  roomd:
+    build:
+      context: .
+      dockerfile: Dockerfile.roomd
+    ports:
+      - "6322:6322"
+    networks:
+      - mythnet
+    depends_on:
+      - userd
+    volumes:
+      - ./spaghetti/rooms.lst:/src/spaghetti/rooms.lst
+
+  game_search:
+    build:
+      context: .
+      dockerfile: Dockerfile.game_search
+    ports:
+      - "6324:6324"
+    networks:
+      - mythnet
+    depends_on:
+      - userd
+
+  webd:
+    build:
+      context: .
+      dockerfile: Dockerfile.webd
+    ports:
+      - "6323:6323"
+    networks:
+      - mythnet
+    depends_on:
+      - userd
+    environment:
+      - USERD_HOST=userd
+    restart: always
+
+networks:
+  mythnet:
+    driver: bridge

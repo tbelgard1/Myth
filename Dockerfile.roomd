@@ -1,0 +1,21 @@
+FROM ubuntu:22.04 as builder
+
+RUN apt update && apt install -y build-essential gcc g++ make git sqlite3 libsqlite3-dev
+
+WORKDIR /src
+COPY spaghetti/ ./spaghetti
+
+WORKDIR /src/spaghetti
+RUN cd common && make clean && make && cd ../room_new && make clean && make
+
+FROM ubuntu:22.04
+RUN apt update && apt install -y sqlite3 libsqlite3-0
+
+COPY spaghetti/users_new /src/spaghetti/users_new
+COPY spaghetti/rooms.lst /src/spaghetti/rooms.lst
+COPY --from=builder /src/spaghetti/room_new/roomd_new /bin/roomd_new
+COPY startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
+ENTRYPOINT ["/startup.sh"]
+CMD ["roomd_new", "start"]

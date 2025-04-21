@@ -1,0 +1,22 @@
+MythDev Change Log
+
+______________________________________
+
+
+Alan - October 23, 2003
+
+ * Packet encryption/decryption code added
+
+ * Myth TFL and Myth Wolf Age connectivity code added
+
+ * "Webdaemon" administration server added
+
+ * Version ID code added
+
+ * Extended buddylist support added
+
+ * build_settings.txt - modified
+
+ * room_new Makefile - modified
+
+ * users_new Makefile -  modified

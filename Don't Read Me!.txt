@@ -1,0 +1,59 @@
+"ReadMe" for Bungie.net MythII Metaserver Open Source
+-----------------------------------------------------
+
+This file must accompany the distribution of Bungie Studio's
+"Bungie.net" MythII metaserver source code. This source code is
+being distributed under the Bungie.net Open Source License;
+refer to the file "License.txt" for the terms of this license
+agreement.
+
+
+What is this stuff?
+-----------------------------------------------------
+
+This is the source code for Bungie's MythII metaserver, the
+backend server system that supported MythII online play over
+the Internet for several years. The day has come for Bungie's
+MythII server to be retired. This source code for the server
+is being released so that the Myth community will have a
+starting point for creating their own Myth server system,
+should the need or desire to do so arise.
+
+The Bungie.net metaserver code was developed for the Linux
+operating system. It is written entirely in the "C" programming
+language. As distributed it should readily compile for most recent
+Linux distributions. It could be ported to most other Posix
+compliant operating systems with a Berkely sockets implementation
+with a little effort (such as Open/Free/NetBSD, MacOSX or Windows).
+
+
+So I can run my own Bungie.net MythII server now?
+------------------------------------------------------
+
+Yes, you can. In fact, there is already a worthy successor to the
+Bungie.net Myth/MythII servers in operation, run by the "Marius.net" 
+team, which was developed entirely from scratch. You can learn more 
+about "Marius.net" at "http://www.mariusnet.com/".
+
+It is not our intention to promote competing Myth game servers. 
+Rather, the hope is that by making the original source code for the 
+"Bungie.net" servers available, the Myth community will have the 
+ability to sustain itself without any additional "official" support 
+from, or reliance upon, Bungie Studios. The "Marius.net" system is 
+a fine solution for the casual Myth/MythII player to use in order 
+to get their online Myth gaming fix, and we hope that additional 
+servers will appear if the need arises.
+
+
+Hey I have a problem! Where do I go for support?
+------------------------------------------------------
+
+While Bungie Studios is not providing any official support for this
+source code, we are providing a space on the "Bungie.net" website
+for use by the development community to coordinate and communicate
+with each other. You can check out this website at:
+"http://www.bungie.net/site/3"
+
+
+Bungie Studios
+February, 2002

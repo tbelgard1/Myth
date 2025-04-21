@@ -1,0 +1,20 @@
+FROM ubuntu:22.04 as builder
+
+RUN apt update && apt install -y build-essential gcc g++ make git sqlite3 libsqlite3-dev
+
+WORKDIR /src
+COPY spaghetti/ ./spaghetti
+COPY spaghetti/web_new/get_userd_host.c spaghetti/web_new/get_userd_host.h ./spaghetti/web_new/
+
+WORKDIR /src/spaghetti
+RUN cd common && make clean && make && cd ../web_new && make clean && make
+
+FROM ubuntu:22.04
+RUN apt update && apt install -y sqlite3 libsqlite3-0
+
+COPY --from=builder /src/spaghetti/web_new/webd_new /bin/webd_new
+COPY startup.sh /startup.sh
+RUN chmod +x /startup.sh
+
+ENTRYPOINT ["/startup.sh"]
+CMD ["webd_new", "start"]
